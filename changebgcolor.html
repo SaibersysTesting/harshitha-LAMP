@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form name="Form1"> First name: <input type="text" name="fname">
+<input type="submit" value="Submit"></form>
+<form name="Form2"></form>
+<form name="Form3"></form>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"The name of the first for is " + document.forms[0].name;
+document.getElementById("demo1").innerHTML =
+"Number of forms: " + document.forms.length;
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+function bgChange(bg) {
+    document.body.style.background = bg;
+}
+</script>
+</head>
+
+<body>
+
+<h2>Change background color</h2>
+<p>Mouse over the squares!</p>
+
+<table style="width:300px;height:100px">
+  <tr>
+    <td onmouseover="bgChange(this.style.backgroundColor)"
+        onmouseout="bgChange('transparent')"
+        style="background-color:plum">
+    </td>
+    <td onmouseover="bgChange(this.style.backgroundColor)"
+        onmouseout="bgChange('transparent')"
+        style="background-color:Pink">
+    </td>
+    <td onmouseover="bgChange(this.style.backgroundColor)"
+        onmouseout="bgChange('transparent')"
+        style="background-color:blue">
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
+
